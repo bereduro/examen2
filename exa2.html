@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Trabajador - Brody Deiby Velarde Hurtado</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .marco {
+      position: fixed;
+      width: 30%;
+      height: 100%;
+      top: 0;
+    }
+
+    #marco1 {
+      left: 0;
+      background-image: url('https://i.pinimg.com/564x/be/a9/35/bea9351502d2e6f54ff84e9f65be8c86.jpg');
+      background-color: #f0f0f0da;
+      padding: 20px;
+    }
+
+    #marco2 {
+      left: 30%;
+      background-image: url('https://i.pinimg.com/564x/15/7f/14/157f1437d0da775fb6f478fb9c48160e.jpg');
+      background-size: cover;
+      padding: 20px;
+    }
+
+    #marco3 {
+      right: 0;
+      background-color: #d0d0d0;
+      padding: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: #007bff;
+      padding: 10px 20px;
+      border: 1px solid #007bff;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    a:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    /* Estilos adicionales para botones redondos y cuadraditos */
+    input[type="radio"] + label,
+    input[type="checkbox"] + label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="marco1" class="marco">
+    <h2>Registro de Trabajador</h2>
+    <form action="#">
+      <label for="rut">Rut:</label>
+      <input type="text" id="rut" name="rut" required>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido-paterno">Apellido Paterno:</label>
+      <input type="text" id="apellido-paterno" name="apellido-paterno" required>
+
+      <label for="apellido-materno">Apellido Materno:</label>
+      <input type="text" id="apellido-materno" name="apellido-materno" required>
+
+      <div>
+        <label>Género:</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="sexo" value="femenino" required>
+        <label for="femenino">Femenino</label>
+      </div>
+
+      <div>
+        <label for="nivel-estudio">Nivel de Estudio:</label>
+        <input type="checkbox" id="ninguno" name="nivel-estudio" value="ninguno" required>
+        <label for="ninguno">No tiene</label>
+        <input type="checkbox" id="tecnico" name="nivel-estudio" value="tecnico" required>
+        <label for="tecnico">Técnico</label>
+        <input type="checkbox" id="universitario" name="nivel-estudio" value="universitario" required>
+        <label for="universitario">Universitario</label>
+      </div>
+
+      <label for="ciudad">Ciudad de Residencia:</label>
+      <select id="ciudad" name="ciudad" required>
+        <option value="La Paz">La Paz</option>
+        <option value="Santa Cruz">Santa Cruz</option>
+        <option value="Potosi">Potosi</option>
+        <option value="Tarija">Tarija</option>
+        <option value="Oruro">Oruro</option>
+        <option value="Beni">Beni</option>
+        <option value="Pando">Pando</option>
+        <option value="Cochabamba">Cochabamba</option>
+        <option value="Sucre">Sucre</option>
+      </select>
+
+      <label for="curriculum">Currículum:</label>
+      <input type="file" id="curriculum" name="curriculum" accept=".pdf" required>
+
+      <label for="foto">Foto:</label>
+      <input type="file" id="foto" name="foto" accept="image/*" required>
+
+      <input type="submit" value="Registrar Trabajador">
+    </form>
+  </div>
+  <div id="marco2" class="marco">
+    <h2>Dueños y Jefes de la Empresa - Dunder Mifflin Paper Company, Inc.</h2>
+    <p>En esta sección, puedes encontrar información sobre los dueños y jefes de la empresa Dunder Mifflin Paper Company, Inc.</p>
+    
+    <div>
+      <h3>Brody Deiby Velarde Hurtado - Dueño y Presidente</h3>
+      <p>Dueño y Presidente - Encargado de la dirección general y toma de decisiones estratégicas.</p>
+      <ul>
+        <li>Brody Deiby Velarde Hurtado</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Sara Carbajal - Jefa Gerente Regional</h3>
+      <p>Jefa Gerente Regional - Responsable de la gestión y coordinación de las sucursales en la región.</p>
+      <ul>
+        <li>Sara Carbajal</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Emanuel Carbajal - Asistente y Suplente del Gerente Regional</h3>
+      <p>Asistente y Suplente del Gerente Regional - Apoyo en la gestión y reemplazo en ausencia del gerente regional.</p>
+      <ul>
+        <li>Emanuel Carbajal</li>
+      </ul>
+    </div>
+    <div style="text-align: center;">
+      <img src="https://i.giphy.com/zDxDq6KN3CwGzAzpT6.webp" alt="GIF" style="width: 150px; height: 110px; margin: auto;">
+    </div>
+  </div>
+  
+  <div id="marco3" class="marco">
+    <a href="https://bereduro.github.io/examen.io/">Ir a página externa</a>
+  </div>
+</body>
+</html>
